@@ -40,7 +40,7 @@ const timer = {
 	pause() {
 		clearInterval(this.id);
 		this.isActiv = false;
-		// продолжить таймер
+		// продолжить таймер 123
 
 	}
 }
