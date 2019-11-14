@@ -27,7 +27,7 @@ const timer = {
 	reset() {
 		clearInterval(this.id);
 		this.isActiv = false;
-		
+		refs.startBtn.textContent = 'Start';
 		this.deltaTime = 0;
 		updateClockFace(this.deltaTime);
 	},
