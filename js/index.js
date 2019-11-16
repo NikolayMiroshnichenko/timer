@@ -40,7 +40,10 @@ const timer = {
 	pause() {
 		clearInterval(this.id);
 		this.isActiv = false;
-		// продолжить таймер 123
+		// console.log(this.isActiv)
+
+		// 	this.pauseTime = this.startTime - this.deltaTime;
+		// 	console.log(this.pauseTime)
 
 	}
 }
