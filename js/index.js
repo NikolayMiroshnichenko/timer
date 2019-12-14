@@ -10,13 +10,14 @@ const timer = {
 	id: null,
 	startTime: null, 
 	isActiv: false,
+	deltaTime: 0,
 	start() {
 		if(this.isActiv) {
 			return;	
 		} 
 
 		this.isActiv = true;
-		this.startTime = Date.now();
+		this.startTime = Date.now() - this.deltaTime;
 
 		this.id = setInterval(() => {
 			this.currentTime = Date.now();
